@@ -14,6 +14,10 @@ RUN apt-get update -y \
         openssl \
     && apt-get autoremove -y \
     && apt-get clean -y \
+    && wget \
+        https://github.com/mikefarah/yq/releases/download/3.4.1/yq_linux_amd64 \
+        -O /usr/bin/yq \
+    && chmod +x /usr/bin/yq \
     && rm -rf \
         /tmp/* \
         /var/tmp/* \
