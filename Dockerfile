@@ -13,6 +13,7 @@ RUN apt-get update -y \
         git \
         jq \
         openssl \
+        gpg \
     && apt-get autoremove -y \
     && apt-get clean -y \
     && wget \
