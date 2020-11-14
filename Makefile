@@ -1,2 +1,2 @@
 all:
-	shellcheck hooks/*
+	shellcheck Dockerfile hooks/*
