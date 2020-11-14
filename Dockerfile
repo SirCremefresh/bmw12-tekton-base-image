@@ -1,5 +1,5 @@
 FROM ubuntu:20.04
-MAINTAINER Donato Wolfisberg <donato@wolfisberg.dev>
+LABEL maintainer="<donato@wolfisberg.dev>"
 
 # Disable prompts from apt.
 ENV DEBIAN_FRONTEND noninteractive
