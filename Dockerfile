@@ -10,10 +10,11 @@ RUN apt-get update -y \
         bash \
         ca-certificates \
         curl \
+        wget \
         git \
         jq \
         openssl \
-        gpg \
+        gnupg \
     && apt-get autoremove -y \
     && apt-get clean -y \
     && wget \
