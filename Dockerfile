@@ -28,15 +28,15 @@ RUN apt-get update -y \
         tar \
     && apt-get autoremove -y \
     && apt-get clean -y \
-    && wget \
+    && wget -q \
         https://github.com/mikefarah/yq/releases/download/${YQ_VERSION}/yq_linux_amd64 \
         -O /usr/bin/yq \
     && chmod +x /usr/bin/yq \
-    && wget \
+    && wget -q \
         https://storage.googleapis.com/kubernetes-release/release/${KUBE_VERSION}/bin/linux/amd64/kubectl \
         -O /usr/bin/kubectl \
     && chmod +x /usr/bin/kubectl \
-    && wget \
+    && wget -q \
         https://get.helm.sh/helm-${HELM_VERSION}-linux-amd64.tar.gz -O - \
         | tar -xzO linux-amd64/helm > /usr/bin/helm \
     && chmod +x /usr/bin/helm \
